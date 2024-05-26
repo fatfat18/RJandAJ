@@ -1,9 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
+  const location = useLocation();
+
+  // Now you can access properties of the location object
+  console.log(location.pathname); // Current path of the route
+  console.log(location.search); // Query parameters
+  console.log(location.hash); // Hash fragment
+
+  const dynamicClassNames1 = location.pathname === "/Home" ? "text-cyan-500 border-cyan-500" : "text-slate-50";
+  const dynamicClassNames2 = location.pathname === "/AboutUs" ? "text-cyan-500 border-cyan-500" : "text-slate-50";
+  const dynamicClassNames3 = location.pathname === "/Products" ? "text-cyan-500 border-cyan-500" : "text-slate-50";
+
   return (
-    <nav className="border-gray-200 bg-gray-100 w-screen" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    <nav className="border-gray-200  w-screen">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="../../src/assets/images/logo.png" className="w-20 object-cover mix-blend-multiply" />
@@ -21,16 +32,16 @@ function Navbar() {
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
-        <div className="hidden w-full md:block md:w-auto text-xl" id="navbar-solid-bg">
-          <Link to="/" className=" text-slate-950 hover:text-cyan-500 border-b-2 border-transparent  hover:border-cyan-500 px-8 py-2">
+        <div className="hidden w-full md:block md:w-auto text-md" id="navbar-solid-bg">
+          <Link to="/Home" className={`hover:text-pink-500 border-b-2 border-transparent hover:border-pink-500 px-8 py-2 + ${dynamicClassNames1}`}>
             Home
           </Link>
 
-          <Link to="/AboutUS" className=" text-slate-950 hover:text-cyan-500 border-b-2 border-transparent  hover:border-cyan-500 px-8 py-2">
+          <Link to="/AboutUs" className={`hover:text-pink-500 border-b-2 border-transparent hover:border-pink-500 px-8 py-2 + ${dynamicClassNames2}`}>
             About Us
           </Link>
 
-          <Link to="/Products" className=" text-slate-950 hover:text-cyan-500 border-b-2 border-transparent  hover:border-cyan-500 px-8 py-2">
+          <Link to="/Products" className={`hover:text-pink-500 border-b-2 border-transparent hover:border-pink-500 px-8 py-2 + ${dynamicClassNames3}`}>
             Products
           </Link>
         </div>
