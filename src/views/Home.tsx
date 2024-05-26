@@ -26,7 +26,7 @@ const Home: React.FC = () => {
               <FontAwesomeIcon icon={faEnvelope} className="absolute text-2xl left-3 top-[.85rem] text-gray-500" />
             </div>
 
-            <button className="p-3 px-8 rounded-xl bg-blue-800 text-white hover:bg-transparent border-2 transition duration-500 hover:bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-transparent hover:bg-clip-text  ">
+            <button className="p-3 px-8 rounded-xl font-black border border-cyan-400 transition duration-500 bg-gradient-to-r from-cyan-500 to-pink-500 text-transparent bg-clip-text  ">
               Subscribe
             </button>
           </div>
