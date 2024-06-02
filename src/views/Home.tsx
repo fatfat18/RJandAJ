@@ -7,7 +7,7 @@ library.add(faEnvelope);
 const Home: React.FC = () => {
   return (
     <>
-      <div className="flex xl:flex-row flex-col  items-center justify-center  w-screen xl:h-[90vh] h-max xl:mt-0 mt-8  overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-pink-500">
+      <div className="flex xl:flex-row flex-col  items-center justify-center  w-screen xl:h-[90vh] h-max xl:mt-0 mt-8  overflow-hidden bg-gradient-to-b from-slate-950 via-slate-950 to-pink-500">
         <div className="xl:w-1/2 w-full flex flex-col items-center justify-center  xl:h-full h-max xl:p-10 p-6 gap-4 ">
           <div
             className=" w-full flex items-center justify-start xl:text-6xl text-3xl font-black bg-gradient-to-r from-cyan-500 to-pink-500 text-transparent bg-clip-text"
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
           </div>
           <div className=" w-full flex items-center justify-start gap-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
             <div className="xl:w-1/2 w-full relative">
-              <input type="email" className=" p-3 rounded-xl pl-12 w-full border-2 border-gray-300 font-medium" placeholder="Enter your email" />
+              <input type="email" className=" p-3 rounded-xl pl-12 w-full border-2 border-gray-300 font-medium text-slate-950" placeholder="Enter your email" />
               <FontAwesomeIcon icon={faEnvelope} className="absolute text-2xl left-3 top-[.85rem] text-gray-500" />
             </div>
 

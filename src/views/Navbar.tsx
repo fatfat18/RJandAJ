@@ -14,10 +14,12 @@ function Navbar() {
   const dynamicClassNames3 = location.pathname === "/Products" ? "text-cyan-500 border-cyan-500" : "text-slate-50";
 
   return (
-    <nav className="border-gray-200  w-screen">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../../src/assets/images/logo.png" className="w-20 object-cover mix-blend-multiply" />
+    <nav className="border-gray-200  w-screen py-5">
+      <div className=" xl:px-32 flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/Home" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="../../src/assets/images/logo2.png" className="w-12 object-cover  " />
+          <p className="text-2xl font-bold text-zinc-50">GoodFinds</p>
+          {/* <img src="../../src/assets/images/logo.png" className="w-20 object-cover mix-blend-multiply filter grayscale " /> */}
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-slate-950">GoodFinds</span> */}
         </a>
         <button
@@ -36,13 +38,12 @@ function Navbar() {
           <Link to="/Home" className={`hover:text-pink-500 border-b-2 border-transparent hover:border-pink-500 px-8 py-2 + ${dynamicClassNames1}`}>
             Home
           </Link>
+          <Link to="/Products" className={`hover:text-pink-500 border-b-2 border-transparent hover:border-pink-500 px-8 py-2 + ${dynamicClassNames3}`}>
+            Products
+          </Link>
 
           <Link to="/AboutUs" className={`hover:text-pink-500 border-b-2 border-transparent hover:border-pink-500 px-8 py-2 + ${dynamicClassNames2}`}>
             About Us
-          </Link>
-
-          <Link to="/Products" className={`hover:text-pink-500 border-b-2 border-transparent hover:border-pink-500 px-8 py-2 + ${dynamicClassNames3}`}>
-            Products
           </Link>
         </div>
       </div>
