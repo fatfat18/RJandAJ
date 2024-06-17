@@ -37,7 +37,36 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="h-screen w-full bg-gradient-to-t from-cyan-500 via-cyan-500 to-pink-500">test </div>
+      <div className="h-screen w-full bg-gradient-to-t from-cyan-500 via-cyan-500 to-pink-500 pt-20">
+        <div className="w-full flex flex-col text-center justify-center items-center ">
+          <div className="w-full flex text-center justify-center items-center mb-20">
+            <p className="text-7xl font-black w-full">Why GoodFinds?</p>
+          </div>
+          <div className="w-full flex text-center justify-center items-center gap-20 ">
+            <div className="w-96 h-80 rounded-3xl bg-white text-slate-900 p-10">
+              <div className="w-full flex items-center justify-center h-1/4 text-5xl font-bold ">Text</div>
+              <div className="w-full flex items-center justify-center h-3/4 text-justify ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+            <div className="w-96 h-80 rounded-3xl bg-white text-slate-900 p-10">
+              <div className="w-full flex items-center justify-center h-1/4 text-5xl font-bold ">Text</div>
+              <div className="w-full flex items-center justify-center h-3/4 text-justify ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+            <div className="w-96 h-80 rounded-3xl bg-white text-slate-900 p-10">
+              <div className="w-full flex items-center justify-center h-1/4 text-5xl font-bold ">Text</div>
+              <div className="w-full flex items-center justify-center h-3/4 text-justify ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
